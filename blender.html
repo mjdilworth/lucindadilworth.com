@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Lucinda Dilworth - Index</title>
+  <title>Lucinda Dilworth</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -28,7 +28,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+ 
 </head>
 
 <body>
@@ -40,7 +41,6 @@
       <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/mushroom.png" alt="">
-        <!-- <i class="bi bi-camera"></i> -->
         <h1>dil.worth</h1>
       </a>
 
@@ -52,10 +52,12 @@
             <ul>
               <li><a href="gallery-hidden.html">Hidden</a></li>
               <li><a href="gallery-awakening.html">Awakening</a></li>
-              <li><a href="blender.html">Blender</a></li>
+              <li><a href="blender.html" class="active">Blender</a></li>
               <li><a href="index.html">More to come</a></li>
+              
             </ul>
           </li>
+          
         </ul>
       </nav><!-- .navbar -->
 
@@ -70,59 +72,44 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-6 text-center">
-          <h2>Lucinda Dilworth</h2>
-          <p>​​I am an artist following my Greek origins while aiming to evolve my skill set to suit the modern and technological-driven world.</p>
-          
-        </div>
-      </div>
-    </div>
-  </section><!-- End Hero Section -->
-
   <main id="main" data-aos="fade" data-aos-delay="1500">
 
-    <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
-      <div class="container-fluid">
+    <!-- ======= End Page Header ======= -->
+    <div class="page-header d-flex align-items-center">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2>Lucinda Dilworth</h2>
+            ​​I am an artist following my Greek origins while aiming to evolve my skill set to suit the modern and technological-driven world.
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Header -->
 
-        <div class="row gy-4 justify-content-center">
+    <section class="sample-page">
+      <div class="container" data-aos="fade-up">
+        <div class="card text-bg-light mb-3" >
+          <div class="card-header">Shroom created using Blender</div>
+          <div class="card-body">
+            <style>
+            
+            model-viewer {
+              width: 100%;
+              height: 300px;
+            } 
+          </style>
+              
+           <center><model-viewer  align="center" alt="lucinda's art" src="assets/blender/shroom.gltf" shadow-intensity="1" camera-controls touch-action="pan-y" generate-schema></model-viewer></center>
           
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/blender/blender.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/blender/blender.png" title="Blender created shroom" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="blender.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/work/hidden/DC1.jpeg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/work/hidden/DC1.jpeg" title="Hidden" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-hidden.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/work/awakening/IMG1.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/work/awakening/IMG1.jpg" title="The Awakening" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-awakening.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          
+
+            <p class="card-text">use your mouse to explore.</p>
+          </div>
         </div>
 
+       
       </div>
-    </section><!-- End Gallery Section -->
+      
+    </section>
 
   </main><!-- End #main -->
 
