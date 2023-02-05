@@ -1,9 +1,3 @@
-/**
-* Template Name: PhotoFolio - v1.2.0
-* Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # Set main reusable colors and fonts using CSS variables
@@ -19,7 +13,7 @@
 /* Colors */
 :root {
   --color-default: #fafafa;
-  --color-primary: #27a776;
+  --color-primary: #d9945b;
   --color-secondary: #161718;
 }
 
@@ -43,7 +37,7 @@ a {
 }
 
 a:hover {
-  color: #32cf93;
+  color: #d9945b;
   text-decoration: none;
 }
 
@@ -80,7 +74,7 @@ h6 {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #5bd9a9;
+  background: #d9945b; ##5bd9a9;
   margin: 4px 10px;
 }
 
@@ -134,7 +128,7 @@ h6 {
 }
 
 .page-header .cta-btn:hover {
-  background: #2cbc85;
+  background: #d9945b;
 }
 
 /*--------------------------------------------------------------
@@ -903,7 +897,7 @@ h6 {
 }
 
 .gallery-single .portfolio-info .btn-visit:hover {
-  background: #2cbc85;
+  background: #d9945b;
 }
 
 .gallery-single .portfolio-description h2 {
@@ -949,7 +943,7 @@ h6 {
 
 .gallery-single .portfolio-description .testimonial-item .quote-icon-left,
 .gallery-single .portfolio-description .testimonial-item .quote-icon-right {
-  color: #5bd9a9;
+  color: #d9945b;
   font-size: 26px;
   line-height: 0;
 }
@@ -1273,7 +1267,7 @@ h6 {
 }
 
 .hero .btn-get-started:hover {
-  background: #2cbc85;
+  background: #d9945b;
 }
 
 @media (max-width: 768px) {
