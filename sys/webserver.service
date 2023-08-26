@@ -3,7 +3,7 @@ Description=Simple Go web server for serving static pages under letsencrypt
 After=multi-user.target
 
 [Service]
-ExecStart=/home/mjd/Projects/lucindadilworth.com/webserver-pi -domain lucinda.dilworth.uk
+ExecStart=/home/mjd/Projects/lucindadilworth.com/webserver-pi -domain lucinda.dilworth.uk -d /home/mjd/Projects/lucindadilworth.com
 Type=simple
 
 [Install]
