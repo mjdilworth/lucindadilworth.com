@@ -18,9 +18,9 @@
 __*
 
 # keys
-#*.pem
-#*.key
-#*.crt
+*.pem
+*.key
+*.crt
 
 # Dependency directories (remove the comment below to include it)
 # vendor/

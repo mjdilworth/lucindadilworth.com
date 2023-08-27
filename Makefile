@@ -1,4 +1,5 @@
 BINARY_NAME := webserver
+CERT_BINARY_NAME := selfcert
 DOCKER_REGISTRY := #if set it should finished by /
 EXPORT_RESULT := false # for CI please set EXPORT_RESULT to true
 
@@ -8,12 +9,15 @@ WHITE  := $(shell tput -Txterm setaf 7)
 CYAN   := $(shell tput -Txterm setaf 6)
 RESET  := $(shell tput -Txterm sgr0)
 
-.PHONEY: all test build build_all build_pi
+.PHONEY: all test build build_all build_pi self_cert
 
 hello:
 	echo "hello"
 	echo "alwasy print hello does not exist"
 
+## build_cert
+build_cert: ## build self cert binary
+	go build -o ./self-signed/${CERT_BINARY_NAME} ./self-signed/.
 ## build:
 build: ## build your project in current arch
 	go	build	-o	${BINARY_NAME}	.
