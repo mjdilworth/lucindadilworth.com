@@ -8,7 +8,7 @@
             "mode": "auto",
             "program": "${fileDirname}",
             "env": {},
-            "args": ["-domain", "localhost", "-port", "80"]
+            "args": ["-domain", "dilworth.uk", "-port", "80"]
         }
     ]
 }

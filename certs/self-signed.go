@@ -59,7 +59,8 @@ func main() {
 	if err := os.WriteFile("localhost.crt", pemCert, 0644); err != nil {
 		log.Fatal(err)
 	}
-	log.Print("wrote cert.pem\n")
+	log.Print("wrote localhost.crt\n")
+	//log.Print("wrote cert.pem\n")
 
 	privBytes, err := x509.MarshalPKCS8PrivateKey(privateKey)
 	if err != nil {
@@ -72,5 +73,6 @@ func main() {
 	if err := os.WriteFile("localhost.key", pemKey, 0600); err != nil {
 		log.Fatal(err)
 	}
-	log.Print("wrote key.pem\n")
+	log.Print("wrote localhost.key\n")
+	//log.Print("wrote key.pem\n")
 }

@@ -29,7 +29,7 @@ func getSelfSignedOrLetsEncryptCert(certManager *autocert.Manager) func(hello *t
 	return func(hello *tls.ClientHelloInfo) (*tls.Certificate, error) {
 		dirCache, ok := certManager.Cache.(autocert.DirCache)
 		if !ok {
-			dirCache = "self-signed"
+			dirCache = "certs"
 		}
 		keyFile := filepath.Join(string(dirCache), hello.ServerName+".key")
 		crtFile := filepath.Join(string(dirCache), hello.ServerName+".crt")
@@ -43,10 +43,14 @@ func getSelfSignedOrLetsEncryptCert(certManager *autocert.Manager) func(hello *t
 	}
 }
 
+// const DefaultACMEDirectory = "https://acme-v02.api.letsencrypt.org/directory"
+const DefaultACMEDirectory = "https://acme-staging-v02.api.letsencrypt.org/directory"
+
 func main() {
 	port := flag.String("port", "80", "port to serve on")
+	https_port := flag.String("https_port", "443", "HTTPS port to serve on")
 	directory := flag.String("d", ".", "the directory of static file to host")
-	domain := flag.String("domain", "foo", "the domain")
+	domain := flag.String("domain", "dilworth.uk", "the domain")
 	//flag.StringVar(&domain, "domain", "", "domain name to request your certificate")
 	flag.Parse()
 
@@ -65,12 +69,13 @@ func main() {
 	certManager := autocert.Manager{
 		Prompt:     autocert.AcceptTOS,
 		HostPolicy: autocert.HostWhitelist(*domain),
-		Cache:      autocert.DirCache("self-signed"),
+		Cache:      autocert.DirCache("certs"),
 	}
+	//certManager.Client.DirectoryURL = "https://acme-staging-v02.api.letsencrypt.org/directory"
 	tlsConfig := certManager.TLSConfig()
 	tlsConfig.GetCertificate = getSelfSignedOrLetsEncryptCert(&certManager)
 	server := http.Server{
-		Addr:      ":443",
+		Addr:      ":" + *https_port,
 		Handler:   mux,
 		TLSConfig: tlsConfig,
 	}

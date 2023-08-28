@@ -17,7 +17,7 @@ hello:
 
 ## build_cert
 build_cert: ## build self cert binary
-	go build -o ./self-signed/${CERT_BINARY_NAME} ./self-signed/.
+	go build -o ./certs/${CERT_BINARY_NAME} ./certs/.
 ## build:
 build: ## build your project in current arch
 	go	build	-o	${BINARY_NAME}	.
