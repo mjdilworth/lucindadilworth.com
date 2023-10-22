@@ -1249,6 +1249,7 @@ url("./fonts/bootstrap-icons.woff?24e3eb84d0bcaf83d77f904c78ac1f47") format("wof
 .bi-textarea-resize::before { content: "\f5ca"; }
 .bi-textarea-t::before { content: "\f5cb"; }
 .bi-textarea::before { content: "\f5cc"; }
+.bi-ticktok::before { content: "\F6CC";}
 .bi-thermometer-half::before { content: "\f5cd"; }
 .bi-thermometer-high::before { content: "\f5ce"; }
 .bi-thermometer-low::before { content: "\f5cf"; }

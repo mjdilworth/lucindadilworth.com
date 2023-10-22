@@ -33,3 +33,7 @@ https://user:auth@domains.google.com/nic/update?hostname=lucinda.dilworth.uk&myi
 
 using new DDNS cleint
 https://github.com/troglobit/inadyn/blob/master/README.md
+
+### dev notes
+
+- js main js has timers for page load

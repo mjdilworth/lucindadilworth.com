@@ -33,3 +33,6 @@ go.work
 assets/work/desire/desire.mp4
 assets/work/seizure/seizure.mp4
 assets/work/sky/sky.mp4
+
+# binaries
+webserver
