@@ -38,6 +38,13 @@ https://github.com/troglobit/inadyn/blob/master/README.md
 
 - js main js has timers for page load
 
+https://rtyley.github.io/bfg-repo-cleaner/
 
 bfg --delete-files assets/work/paros/2495.mov  my-repo.git
 assets/work/paros/2495.mov
+
+
+ git reflog expire --expire=now --all && git gc --prune=now --aggressive
+
+ 	2495.mov | 44c8d667 (205.4 MB)
+	6353.mov | e71e695e (127.5 MB)
