@@ -37,3 +37,7 @@ https://github.com/troglobit/inadyn/blob/master/README.md
 ### dev notes
 
 - js main js has timers for page load
+
+
+bfg --delete-files assets/work/paros/2495.mov  my-repo.git
+assets/work/paros/2495.mov
