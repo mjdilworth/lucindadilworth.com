@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /sys/
+Disallow: /js/
+Disallow: /certs/
+Disallow: /*.md
+Disallow: /Makefile
+Disallow: /main.go
+Disallow: /go.mod
+Disallow: /go.sum
+
+
+

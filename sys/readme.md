@@ -48,3 +48,12 @@ assets/work/paros/2495.mov
 
  	2495.mov | 44c8d667 (205.4 MB)
 	6353.mov | e71e695e (127.5 MB)
+
+
+### hosting on AWS
+
+ssh ubuntu@www.lucindadilworth.com
+
+to copy large files
+scp 6353.mov ubuntu@www.lucindadilworth.com:/home/ubuntu/Projects/lucindadilworth.com/assets/work/paros/
+
