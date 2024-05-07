@@ -57,3 +57,8 @@ ssh ubuntu@www.lucindadilworth.com
 to copy large files
 scp 6353.mov ubuntu@www.lucindadilworth.com:/home/ubuntu/Projects/lucindadilworth.com/assets/work/paros/
 
+### Cloudflared
+
+i stopped using this and went for frps
+
+

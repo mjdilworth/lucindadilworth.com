@@ -117,3 +117,45 @@ WorkingDirectory=/home/mike/Videos
 
 [Install]
 WantedBy=multi-user.target
+
+
+### Server
+
+[Unit]
+Description=tunnel
+
+[Service]
+User=ubuntu
+ExecStart=/home/ubuntu/frp/frps -c /home/ubuntu/frp/frps.toml
+WorkingDirectory=/home/ubuntu/frp
+
+[Install]
+WantedBy=multi-user.target
+
+
+### Client
+sudo vi /etc/systemd/system/tunnel.service
+
+[Unit]
+Description=tunnel
+
+[Service]
+User=mike
+ExecStart=/home/mike/frp/frpc -c /home/mike/frp/frpc.toml
+WorkingDirectory=/home/mike/frp
+
+[Install]
+WantedBy=multi-user.target
+
+
+sudo systemctl enable tunnel.service
+
+
+
+ssh -oPort=6000 mike@www.lucindadilworth.com
+
+Host dilly02
+        HostName www.lucindadilworth.com
+        IdentityFile ~/.ssh/id_rsa
+        ProxyCommand ssh -oPort=6000 --hostname %h
+        User mike
