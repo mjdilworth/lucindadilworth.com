@@ -155,6 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  
   /**
    * Animation on scroll function and init
    */
