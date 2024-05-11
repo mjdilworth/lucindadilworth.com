@@ -72,3 +72,24 @@ The "Artificial Impression" exhibition continued its journey in Hoxton, London f
                 <div class="swiper-slide">
                   <img class="img-responsive" src="assets/work/paros/movart2.mp4" style="height:500px; width:500px;" alt="">
                 </div>
+
+
+
+      First name(s)	Ellen
+Last name	Dilworth
+Marriage quarter	4
+Marriage year	1940
+Registration month	-
+MarriageFinder™	Ellen Dilworth married one of these peopleClifford Fielding
+Spouse's last name	Fielding
+District	Ormskirk
+District number	-
+County	Lancashire
+Country	England
+Volume	8B
+Volume as transcribed	8B
+Page number	2097
+Record set	England & Wales Marriages 1837-2005
+Category	Birth, Marriage, Death & Parish Records
+Subcategory	Civil Marriage & Divorce
+Collections from	Great Britain, England
